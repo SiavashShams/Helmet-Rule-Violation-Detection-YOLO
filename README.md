@@ -35,7 +35,7 @@ The dataset for this challenge can be downloaded from the official [AI City Chal
 - The video resolution is 1920x1080. 
 - The testing data has another 100 videos, but will be released later. For this assignment, it is sufficient to use only the training data to develop/evaluate models by splitting the training data into train/val sets.
 
-Each motorcycle in the annotated frame has bounding box annotation of each rider with or without helmet information, for upto a maximum of 4 riders in a motorcycle. The class id (labels) of the object classes in this dataset is as follows:
+Each motorcycle in the annotated frame has bounding box annotation of each rider with or without helmet information, for upto a maximum of 4 riders in a motorcycle. The class id (labels) of the object classes in the original data is as follows:
 
 - 1, motorbike: bounding box of motorcycle
 - 2, DHelmet: bounding box of the motorcycle driver, if he/she is wearing a helmet
@@ -46,6 +46,8 @@ Each motorcycle in the annotated frame has bounding box annotation of each rider
 - 7, P2NoHelmet: bounding box of the passenger 2 of the motorcycle, if he/she is not wearing a helmet
 - 8, P0Helmet: bounding box of the child sitting in front of the Driver of the motorcycle, if he/she is wearing a helmet
 - 9, P0NoHelmet: bounding box of the child sitting in front of the Driver of the motorcycle, if he/she is wearing not a helmet
+
+Note: There is a .png image in the data folder that provides a visualization of the classes for better understanding.
 
  <span style="color:red">***IMPORTANT:***</span> For the purpose of this assignment, we will want to merge the labels into fewer classes (this needs to be done as part of the data processing step, see instructions below) in order to make the training and evaluation a little bit easier:
 
@@ -81,6 +83,7 @@ There is a single txt file for the training data. The testing data will be relea
     * <span style="color:red">***You must clearly reference  the literature and/or external code implementations that you have used in your code***</span>. 
     * You must use PyTorch as the framework of choice.
     * <span style="color:red">***You must include a notebook OR python script with code and comments/descriptions that demonstrates how you have trained your model***</span>.
+    * There may be more elegant approaches (e.g. object detection followed by post-processing) to achieve good results on the data.
 
 4. Evaluate your model on the dataset and analyze your plots.
     * <span style="color:red">***You must include a jupyter notebook***</span> with comments/descriptions that show training plots (loss, accuracy, mAP, etc) and per-class AP evaluation results.
@@ -99,6 +102,7 @@ There is a single txt file for the training data. The testing data will be relea
     * The CVPR submission deadline is March 25th, 2024.
     * Read the Track 5 submission instructions carefully at https://www.aicitychallenge.org/2024-data-and-evaluation/.
     * For this assignment, we evaluate on the smaller merged class labels; official submission requires you to submit results based on the original 9-class labels.
+    * Your results will need to be competitive :)
     * Refer to the instructions page on the exact submission format.
 
 ## Submission
