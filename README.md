@@ -108,7 +108,25 @@ There is a single txt file for the training data. The testing data will be relea
 
 ## Usage
 
-How to use your project after installation. Provide any necessary commands and examples of their output.
+To use this project for training and post-processing with YOLOv8, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/ecbme6040/e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289.git
+   cd e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289
+   ```
+
+2. To train the model, run the following from the `src` directory:
+   ```
+   cd src
+   python train_yolov8x.py
+   ```
+
+3. For post-processing, execute the provided script:
+   ```
+   python postprocessing.py
+   ```
+
 
 ## Folder Structure
 
