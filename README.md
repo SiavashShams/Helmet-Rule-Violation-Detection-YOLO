@@ -136,8 +136,7 @@ To use this project for training and post-processing with YOLOv8, follow these s
 - `assignment2.ipynb`: Jupyter notebook with all the code, comments, and explanations regarding the project's analysis and results.
 
 ### Dataset/Model Google Drive Link:
-TODO add your group's dataset/model google drive folder link (make sure to set the permissions accordingly before sharing the link).
-
+Data and models:https://drive.google.com/drive/folders/1Ri24mR17sl9ifj-8gzgQc1r-J-uIGK14?usp=sharing
 ## Grading
 
 - Data Preprocessing/Dataset preparation: <span style="color:red">(30%)</span>
