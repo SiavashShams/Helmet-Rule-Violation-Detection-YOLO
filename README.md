@@ -2,31 +2,18 @@
 ## CVPR 24' AI City Challenge - Detecting Violation of Helmet Rule for Motorcyclists (Motorcycle Helmet Detection)
 ## EECS E6691 2024 Spring
 
-Please read the entirety of this README file, which contains description of the data/annotations, and instructions on completing the assignment. You will need to modify this file before submission.
 
-### <span style="color:red">**[Submission Deadline]:**</span> 25th March 2024
-
-## Introduction
-
-The [AI City Challenge](https://www.aicitychallenge.org/), hosted at CVPR 2024, focuses on harnessing AI to enhance operational efficiency in physical settings such as retail and warehouse environments, and Intelligent Traffic Systems (ITS). **This assignment focuses on Track 5 of the AI City Challenge - Detecting Violation of Helmet Rule for Motorcyclists**. 
 
 Motorcycles are one of the most popular modes of transportation. Due to lesser protection compared to cars and other standard vehicles, motorcycle riders are exposed to a greater risk of crashes. Therefore, wearing helmets for motorcycle riders is mandatory as per traffic rules and automatic detection of motorcyclists without helmets is one of the critical tasks to enforce strict regulatory traffic safety measures.
 
-**In this assignment, the task is to develop and train a model to perform motorbike (and) helmet detection for riders.** The goal is to familiarize students with the end-to-end machine learning/deep learning modeling process, including data preprocessing, model selection and training, and evaluation. Students may also wish to submit their results to the evaluation server if they feel their results and methodology are competitive.
 
 ## <span style="color:red"><strong>TODO:</strong></span> Group Member Names and UNIs
 **This assignment can be done in groups of upto three members** (no more than three). Please list the names and UNIs of the group members below:
 
-- **〈Student 1 FULL NAME〉** **〈Student 1 UNI〉**
-- Etc.
-
-## <span style="color:red"><strong>TODO:</strong></span> (Re)naming of Repository
-
-***INSTRUCTIONS*** for naming the students' solution repository for group assignments, such as the final project (students need to use a 4-letter groupID and the UNIs of all group members):
-* Template: `e6691-2024spring-assign2-GroupID-UNI1-UNI2-UNI3`
-* Example: `e6691-2024spring-assign2-MEME-zz9999-aa9999-aa0000`
-* This can be done from the "Settings" on the repository webpage.
-
+- **〈Student 1 Boshra Khalili〉** **〈bk2898〉**
+- **〈Student 2 Siavash Shams〉** **〈ss6928〉**
+- **〈Student 3 Xilin Jiang〉** **〈xj2298〉**
+- 
 ## Data Description
 
 The dataset for this challenge can be downloaded from the official [AI City Challenge Tracks](https://www.aicitychallenge.org/2024-challenge-tracks/) (instructions explained below, requires sign-up).
@@ -119,11 +106,37 @@ There is a single txt file for the training data. The testing data will be relea
 
 ## <span style="color:red"><strong>TODO:</strong></span> Repository Description
 
-This section must be filled up by students with a brief description of the approach, organization of code in the directories, and instructions on running python scripts/models (if applicable).
+## Usage
+
+To use this project for training and post-processing with YOLOv8, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/ecbme6040/e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289.git
+   cd e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289
+   ```
+
+2. To train the model, run the following from the `src` directory:
+   ```
+   cd src
+   python train_yolov8x.py
+   ```
+
+3. For post-processing, execute the provided script:
+   ```
+   python postprocessing.py
+   ```
+
+
+## Folder Structure
+
+- `/config`: Configuration files and scripts for setting up the project environment.
+- `/src`: Source code of the project required for training YOLO models and postprocessing.
+- `Assignment2_report.pdf`: Detailed report of the project findings and methodology.
+- `assignment2.ipynb`: Jupyter notebook with all the code, comments, and explanations regarding the project's analysis and results.
 
 ### Dataset/Model Google Drive Link:
-TODO add your group's dataset/model google drive folder link (make sure to set the permissions accordingly before sharing the link).
-
+Data and models:https://drive.google.com/drive/folders/1Ri24mR17sl9ifj-8gzgQc1r-J-uIGK14?usp=sharing
 ## Grading
 
 - Data Preprocessing/Dataset preparation: <span style="color:red">(30%)</span>
