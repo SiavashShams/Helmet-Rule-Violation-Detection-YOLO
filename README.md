@@ -46,7 +46,7 @@ To use this project for training and post-processing with YOLOv8, follow these s
 
 1. Clone the repository:
    ```
-   git clone https://github.com/ecbme6040/e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289.git
+   git clone https://github.com/SiavashShams/Helmet-Rule-Violation-Detection-YOLO.git
    cd e6691-2024spring-assign2-team11-bk2898-ss6928-xj2289
    ```
 
